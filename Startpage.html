@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title> ~ </title>
+	<title data-i18n="new_tab_title"> ~ </title>
+	<link rel="icon" type="image/png" href="moz-extension://15be58b7-0c26-4186-8436-68f199b4cc88/images/icon.svg">
+</head>
+
+<style>
+
+body{
+	background: #c0a625;
+	#color: #BBC4C8;
+}
+
+.search{
+	background: white;
+	height: 200px;
+}
+
+.left{
+  background-color: #29314d;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50%;
+}
+
+.right {
+  background-color: #5c98ff;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 50%;
+}
+
+.search-engine-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.container{
+	display: grid;
+	grid-gap: 20px;
+	margin-top: 150px;
+	margin-bottom: 2%;
+	margin-left: 15%;
+	margin-right: 15%;
+	grid-template-columns: repeat(5,1fr);
+	justify-items: center;
+}
+
+.logo{
+	max-height: 100px;;
+	grid-column: 1/-1;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+.search_box{
+	grid-column: 1/-1;
+	padding-bottom: 25px;
+	margin-left: 0px;
+}
+
+.input_box{
+	border: none;
+	outline: none;
+	background: #eff0f1;
+	top: 50%;
+	color: black;
+	opacity: 0.95;
+	font-size: 20px;
+	transition: 0.4px all;
+	border-radius: 5px 5px 5px 5px;
+	width: 80%;
+	/*box-shadow: 3px 4px #0F1011;*/
+
+}
+
+li{
+	list-style-type: none;
+	padding:5px
+}
+
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	color: black;
+}
+
+a:hover{
+	color: #0091eb;
+}
+
+.category{
+	background: rgba(239, 240, 241, .8);	/*#eff0f1*/
+	padding: 20px;
+	color: #6b819d; /*Headline color;*/
+	opacity: 0.95;
+	border: #191C1E;
+	border-radius: 5px;
+	width:   -moz-available;
+	/*box-shadow: 3px 5px #0F1011;*/
+}
+
+</style>
+
+<body>
+
+	<div class="left">
+	<center>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Logo_searx_a.png?20170831113952" height=50px>
+		<div class="search_box">
+			<center>
+			<form action="https://www.searx.be" method="get">
+			<input class="input_box" type="text" name="q" placeholder="Search searX.be ...">
+			</form>
+		</div>
+	</div>
+
+	<div class="right">
+	<center>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Qwant-Logo-2022-bg-blue.svg/300px-Qwant-Logo-2022-bg-blue.svg.png" height=50px>
+				<a class="bm" href="https://www.qwant.com/">en</a> |
+				<a class="bm" href="https://www.qwant.com/?l=fr&r=FR&sr=fr">fr</a> |
+				<a class="bm" href="https://www.qwant.com/?l=de&r=DE&sr=de">de</a>
+		<div class="search_box">
+			<center>
+			<form action="https://www.qwant.com" method="get">
+			<input class="input_box" type="text" name="q" placeholder="Search Quant.com ...">
+			</form>
+		</div>
+	</div>
+
+
+
+<div class="container">
+
+<div class="category">
+	<center>
+	<li>
+	<a class="bm" href="https://www.lemonde.fr/"><img src="https://www.lemonde.fr/dist/assets/img/logos/pwa-180.png" width=60px></a>
+	<a class="bm" href="https://www.monde-diplomatique.fr/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2wbOMPGyFcDe5vkz1XZDKbPuWuJP1t4jFWg&usqp=CAU" width=60px></a>
+	<a class="bm" href="https://www.lecanardenchaine.fr/"><img src="https://www.lecanardenchaine.fr/javax.faces.resource/lce2/img/favicon/apple-touch-icon-57x57.png.xhtml" width=60px></a>
+	<a class="bm" href="https://www.canardpc.com/"><img src="https://www.canardpc.com/favicon.ico" width=60px></a>
+	<a class="bm" href="https://www.arte.tv/fr/"><img src="https://static-cdn.arte.tv/replay/favicons/favicon-194x194.png" width=60px></a>
+	</li>
+	<br>
+	<br>
+	<li>
+	<a class="bm" href="https://www.newyorker.com/"><img src="https://media.newyorker.com/photos/60b67f6c82d981e6f764a0fc/master/pass/this%2520week's%2520issue.jpeg" width=60px></a>
+	<a class="bm" href="https://www.nytimes.com/"><img src="https://www.nytimes.com/vi-assets/static-assets/ios-ipad-144x144-28865b72953380a40aa43318108876cb.png" width=60px></a>
+	<a class="bm" href="https://www.theguardian.com/"><img src="https://assets.guim.co.uk/images/favicons/fee5e2d638d1c35f6d501fa397e53329/152x152.png" width=60px></a>
+	<a class="bm" href="https://www.currentaffairs.org/"><img src="https://www.currentaffairs.org/static/images/favicon.ico?v=3" width=60px></a>
+	</li>
+	<br>
+	<br>
+	<li><a class="bm" href="https://www.deutschlandfunk.de/"><img src="https://www.deutschlandfunk.de/static/img/deutschlandfunk/icons/apple-touch-icon-120x120.png" width=60px></a></li>
+
+</div>
+
+<div class="category">
+	<center>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Wiktionary-wordmark-en.svg/640px-Wiktionary-wordmark-en.svg.png" width=50%>
+	<li>
+		<a class="bm" href="https://en.wiktionary.org/">en</a> |
+		<a class="bm" href="https://fr.wiktionary.org/">fr</a> |
+		<a class="bm" href="https://de.wiktionary.org/">de</a>
+	</li>
+	<br>
+	<br>
+		<img src= "https://upload.wikimedia.org/wikipedia/commons/b/be/Logo_wordreference.jpg" width=60%>
+	<br>
+	<li><a class="bm" href="https://www.wordreference.com/ende/">en–de</a> |
+		<a class="bm" href="https://www.wordreference.com/enfren%E2%80%93fr">en–fr</a> |
+		<a class="bm" href="https://www.wordreference.com/frde/">fr–de</a>
+	</li>
+	<br>
+	<br>
+		<img src="https://upload.wikimedia.org/wikipedia/en/9/98/Leo.org_%28logo%29.png">
+	<li>
+		<a class="bm" href="https://dict.leo.org/german-english/">en–de</a> |
+		<a class="bm" href="https://dict.leo.org/french-english/">en–fr</a> |
+		<a class="bm" href="https://dict.leo.org/franz%C3%B6sisch-deutsch/">fr–de</a>
+	</li>
+	<br>
+	<img src="https://d1wigddrwdtsce.cloudfront.net/img5/dl_Linguee_Logo.svg" width=60%>
+	<br>
+	<li>
+		<a class="bm" href="https://www.linguee.com/english-german">en–de</a> |
+		<a class="bm" href="https://www.linguee.com/french-english">en–fr</a> |
+		<a class="bm" href="https://www.linguee.com/french-german">fr–de</a>
+	</li>
+	<br>
+	en-en
+	<li>
+		<a class="bm" href="https://www.merriam-webster.com/">Merriam-Webster</a></li>
+		<a class="bm" href="https://dictionary.cambridge.org/">Cambridge</a>
+		<a class="bm" href="https://www.collinsdictionary.com/us/dictionary/english">Collins</a>
+	</li>
+	<br>
+	<br>
+	fr–fr
+	<br>
+	<li>
+		<a class="bm" href="https://www.larousse.fr/">Larousse</a> |
+		<a class="bm" href="https://dvlf.uchicago.edu/">DVLF</a>
+	</li>
+	<br>
+	de–de
+	<li>
+		<a class="bm" href="https://www.dwds.de/">DWDS</a> |
+		<a class="bm" href="https://www.duden.de/">Duden</a> |
+		<a class="bm" href="https://www.redensarten-index.de/suche.php">Redensarten-Index</a>
+	</li>
+</div>
+
+<div class="category">
+	<center>
+	<img src="https://wikimediafoundation.org/wp-content/uploads/2018/08/Wikipedia_wordmark.png?w=1024" width=60%>
+	<br>
+	<li>
+		<a class="bm" href="https://en.wikipedia.org/">en</a> |
+		<a class="bm" href="https://fr.wikipedia.org/">fr</a> |
+		<a class="bm" href="https://de.wikipedia.org/">de</a>
+	</li>
+	<br>
+		<img src="https://archlinux.org/static/logos/archlinux-logo-dark-90dpi.ebdee92a15b3.png" width=60%>
+	<li>
+		<a class="bm" href="https://wiki.archlinux.org/">ArchWiki</a> |
+		<a class="bm" href="https://wiki.archlinux.org/title/user:namoria">User</a> |
+		<a class="bm" href="https://archlinux.org/packages/">Pac</a> |
+		<a class="bm" href="https://aur.archlinux.org/">AUR</a>
+	</li>
+	<br>
+		<img src="https://images.pling.com/img/00/00/20/46/39/1102420/142418-1.png" width=20%>
+	<br>
+		<li>
+		<a class="bm" href="https://wiki.gentoo.org/">Gentoo wiki</a> |
+		<a class="bm" href="https://www.protondb.com/">Protondb</a> |
+		<a class="bm" href="https://appdb.winehq.org/index.php">WineHQ</a> |
+		<a class="bm" href="https://www.pcgamingwiki.com/wiki/Home">PCGWiki</a>
+		</li>
+		<li>
+		<a class="bm" href="https://lwn.net/">LWN</a> |
+		<a class="bm" href="https://distrowatch.com/">Distrowatch</a> |
+		<a class="bm" href="https://www.phoronix.com/">Phoronix</a> |
+		<a class="bm" href="https://www.omgubuntu.co.uk/">omg!ubuntu!</a> |
+		<a class="bm" href="https://www.gamingOnlinux.com/">GamingonLinux</a>
+		</li>
+		<li>
+		<a class="bm" href="https://itsfoss.com/">It’s FOSS</a> |
+		<a class="bm" href="https://linuxjourney.com/">Linux Journey</a> |
+		<a class="bm" href="https://www.youtube.com/c/LearnLinuxtv">LearnLinuxtv</a> |
+		<a class="bm" href="https://www.youtube.com/c/linode">Linode</a> |
+		</li>
+	<br>
+</div>
+
+			<div class="category">
+				<center>
+				Blogs
+				<li><a class="bm" href="https://rictornorton.co.uk/index.htm">Rictor Norton</a></li>
+				<li><a class="bm" href="http://learn-french-free-with-stories.weebly.com/">French Stories</a></li>
+				<li><a class="bm" href="https://www.1jour1actu.com/">1jour1actu</a></li>
+				<li><a class="bm" href="https://www.podcastfrancaisfacile.com/apprendre-le-francais/liste-des-textes-fle">Français facile</a></li>
+				<li><a class="bm" href="https://xkcd.com/">xkcd</a></li>
+				<li><a class="bm" href="file:///home/celine/Documents/Webdesign/Indieperlen/index.html">Indieperlen</a></li>
+				<br>
+				Music
+				<li><a class="bm" href="https://bandcamp.com/">Bandcamp</a>
+				</li><li><a class="bm" href="https://www.discogs.com/">Discogs</a>
+				</li><li><a class="bm" href="https://genius.com/">Genius</a>
+			</li></div>
+
+			<div class="category">
+				<center>
+				Privacy
+				<li><a class="bm" href="https://www.kuketz-blog.de/">Kuketz-Blog</a></li>
+				<li><a class="bm" href="https://www.privacytools.io/">PrivacyTools</a></li>
+				<br>
+				Privacy – Testing
+				<li><a class="bm" href="https://librewolf.net/docs/testing/">LibreWolf Testing</a></li>
+				<li><a class="bm" href="https://www.perfect-privacy.com/en/tests/check-ip">PerfectPrivacy</a></li>
+				<li><a class="bm" href="https://www.deviceinfo.me/">Device Info</a></li>
+				<li><a class="bm" href="https://ipleak.net/">IPleak</a></li>
+				<br>
+			</div>
+		</div>
+</body>
+</html>
