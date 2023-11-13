@@ -25,16 +25,18 @@ body{
 .left{
   background-color: #f0f0eb;
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 20px;
+  bottom: 20px;
+  padding: 10px;
   width: 50%;
 }
 
 .right {
   background-color: #29314d;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px;
   width: 50%;
 }
 
@@ -48,7 +50,7 @@ body{
 .container{
 	display: grid;
 	grid-gap: 20px;
-	margin-top: 150px;
+	margin-top: 20px;
 	margin-bottom: 2%;
 	margin-left: 15%;
 	margin-right: 15%;
@@ -103,7 +105,7 @@ a:hover{
 }
 
 .category{
-	background: rgba(239, 240, 241, .8);	/*#eff0f1*/
+	background: #ABD7EB;	/*#eff0f1 #*/
 	padding: 20px;
 	color: #6b819d; /*Headline color;*/
 	opacity: 0.95;
@@ -119,7 +121,7 @@ a:hover{
 
 	<div class="left">
 	<center>
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Logo_Ecosia_2022.svg/2560px-Logo_Ecosia_2022.svg.png" height=50px>
+		<a href="https://www.ecosia.org"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Logo_Ecosia_2022.svg/2560px-Logo_Ecosia_2022.svg.png" height=50px></a>
 		<div class="search_box">
 			<center>
 			<form action="https://www.ecosia.org/search?method=index&q=" method="get">
@@ -131,7 +133,7 @@ a:hover{
 
 	<div class="right">
 	<center>
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Logo_searx_a.png?20170831113952" height=50px>
+		<a href="https://www.searx.be"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Logo_searx_a.png?20170831113952" height=50px></a>
 		<div class="search_box">
 			<center>
 			<form action="https://www.searx.be" method="get">
@@ -147,52 +149,66 @@ a:hover{
 <div class="category">
 	<center>
 	<li>
-	<a class="bm" href="https://www.lemonde.fr/"><img src="https://www.lemonde.fr/dist/assets/img/logos/pwa-180.png" width=60px></a>
-	<a class="bm" href="https://www.monde-diplomatique.fr/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2wbOMPGyFcDe5vkz1XZDKbPuWuJP1t4jFWg&usqp=CAU" width=60px></a>
-	<a class="bm" href="https://www.lecanardenchaine.fr/"><img src="https://www.lecanardenchaine.fr/javax.faces.resource/lce2/img/favicon/apple-touch-icon-57x57.png.xhtml" width=60px></a>
-	<a class="bm" href="https://www.canardpc.com/"><img src="https://www.canardpc.com/favicon.ico" width=60px></a>
-	<a class="bm" href="https://www.arte.tv/fr/"><img src="https://static-cdn.arte.tv/replay/favicons/favicon-194x194.png" width=60px></a>
+	<a class="bm" href="https://www.lemonde.fr/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Le_monde_logo.svg/800px-Le_monde_logo.svg.png" width=50%></a>
+<!-- "https://www.lemonde.fr/dist/assets/img/logos/pwa-180.png" --> 
+	<br><br>
+	<a class="bm" href="https://www.monde-diplomatique.fr/"><img src="https://www.monde-diplomatique.fr/squelettes/images/logo.svg" width=50%></a>
+<!-- "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2wbOMPGyFcDe5vkz1XZDKbPuWuJP1t4jFWg&usqp=CAU" -->
+	<br><br>
+	<a class="bm" href="https://www.lecanardenchaine.fr"><img src="https://www.lecanardenchaine.fr/javax.faces.resource/lce2/img/generic/lg_le-canard-enchaine.svg" width=50%></a>
+<!-- "https://www.lecanardenchaine.fr/javax.faces.resource/lce2/img/favicon/apple-touch-icon-57x57.png.xhtml" -->
+	<br><br>
+	<a class="bm" href="https://www.canardpc.com/"><img src="https://cdn.canardware.com/2022/02/15155146/logo-cpc-jv.png" width=50%></a>
+<!-- "https://www.canardpc.com/favicon.ico" -->
+	<br><br>
+	<a class="bm" href="https://www.arte.tv/fr/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Arte_Logo_2011.svg/2560px-Arte_Logo_2011.svg.png" width=50%></a>
+<!-- "https://static-cdn.arte.tv/replay/favicons/favicon-194x194.png" -->
 	</li>
-	<br>
-	<br>
+	<hr>
 	<li>
-	<a class="bm" href="https://www.newyorker.com/"><img src="https://media.newyorker.com/photos/60b67f6c82d981e6f764a0fc/master/pass/this%2520week's%2520issue.jpeg" width=60px></a>
-	<a class="bm" href="https://www.nytimes.com/"><img src="https://www.nytimes.com/vi-assets/static-assets/ios-ipad-144x144-28865b72953380a40aa43318108876cb.png" width=60px></a>
-	<a class="bm" href="https://www.theguardian.com/"><img src="https://assets.guim.co.uk/images/favicons/fee5e2d638d1c35f6d501fa397e53329/152x152.png" width=60px></a>
-	<a class="bm" href="https://www.currentaffairs.org/"><img src="https://www.currentaffairs.org/static/images/favicon.ico?v=3" width=60px></a>
+	<a class="bm" href="https://www.newyorker.com/"><img src="https://www.newyorker.com/verso/static/the-new-yorker/assets/logo.svg" width=50%></a>
+	<br><br>
+<! --"https://media.newyorker.com/photos/60b67f6c82d981e6f764a0fc/master/pass/this%2520week's%2520issue.jpeg" -->
+	<a class="bm" href="https://www.nytimes.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/NewYorkTimes.svg/300px-NewYorkTimes.svg.png" width=50%></a>
+	<br><br>
+<! --"https://www.nytimes.com/vi-assets/static-assets/ios-ipad-144x144-28865b72953380a40aa43318108876cb.png" -->
+	<a class="bm" href="https://www.theguardian.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/The_Guardian_2018.svg/250px-The_Guardian_2018.svg.png" width=50%></a>
+	<br><br>
+<! --"https://assets.guim.co.uk/images/favicons/fee5e2d638d1c35f6d501fa397e53329/152x152.png" -->
+	<a class="bm" href="https://www.currentaffairs.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Current_Affairs_logo.png/220px-Current_Affairs_logo.png" width=50%></a>
+	<br><br>
+<! --"https://www.currentaffairs.org/static/images/favicon.ico?v=3" -->
 	</li>
-	<br>
-	<br>
-	<li><a class="bm" href="https://www.deutschlandfunk.de/"><img src="https://www.deutschlandfunk.de/static/img/deutschlandfunk/icons/apple-touch-icon-120x120.png" width=60px></a></li>
+	<hr>
+	<li><a class="bm" href="https://www.deutschlandfunk.de/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Deutschlandfunk_Logo_2017.svg/250px-Deutschlandfunk_Logo_2017.svg.png" width=50%></a></li>
+<! --" https://www.deutschlandfunk.de/static/img/deutschlandfunk/icons/apple-touch-icon-120x120.png" -->
 
 </div>
 
 <div class="category">
 	<center>
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Wiktionary-wordmark-en.svg/640px-Wiktionary-wordmark-en.svg.png" width=50%>
 	<li>
-		<a class="bm" href="https://en.wiktionary.org/">en</a> |
-		<a class="bm" href="https://fr.wiktionary.org/">fr</a> |
-		<a class="bm" href="https://de.wiktionary.org/">de</a>
+		<a class="bm" href="https://www.oed.com/"><img src="https://www.oed.com/images/logo3.svg" width=100%></a>
+		<br><br>
+		<a class="bm" href="https://www.merriam-webster.com/"><img src="https://merriam-webster.com/assets/mw/static/advertising/mw_mediakit_logo.png" width=50%></a>
+		<br><br>
+		<a class="bm" href="https://dictionary.cambridge.org/"><img src="https://dictionary.cambridge.org/external/images/logo-lrg-small.png?version=5.0.357" width=50%></a>
+		<br><br>
+		<a class="bm" href="https://www.collinsdictionary.com/us/dictionary/english"><img src="https://www.collinsdictionary.com/us/external/images/logo.png?version=5.0.23" width=50%></a>
 	</li>
-	<br>
-	<br>
-		<img src= "https://upload.wikimedia.org/wikipedia/commons/b/be/Logo_wordreference.jpg" width=60%>
-	<br>
-	<li><a class="bm" href="https://www.wordreference.com/ende/">en–de</a> |
-		<a class="bm" href="https://www.wordreference.com/enfren%E2%80%93fr">en–fr</a> |
-		<a class="bm" href="https://www.wordreference.com/frde/">fr–de</a>
-	</li>
-	<br>
-	<br>
-		<img src="https://upload.wikimedia.org/wikipedia/en/9/98/Leo.org_%28logo%29.png">
+	<hr>
 	<li>
-		<a class="bm" href="https://dict.leo.org/german-english/">en–de</a> |
-		<a class="bm" href="https://dict.leo.org/french-english/">en–fr</a> |
-		<a class="bm" href="https://dict.leo.org/franz%C3%B6sisch-deutsch/">fr–de</a>
+		<a class="bm" href="https://www.larousse.fr/"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/1/13/Larousse_vectoriel.svg/1280px-Larousse_vectoriel.svg.png" width=50%</a>
+		<a class="bm" href="https://dvlf.uchicago.edu/"><img src="https://dvlf.uchicago.edu/img/dvlf_logo_medium_no_beta_transparent.8effd040.png" width=50%</a>
 	</li>
-	<br>
-	<img src="https://d1wigddrwdtsce.cloudfront.net/img5/dl_Linguee_Logo.svg" width=60%>
+	<hr>
+	<li>
+		<a class="bm" href="https://www.dwds.de/"><img src="https://www.dwds.de/dwds_static/images/dwds.svg" width=50%></a>
+		<a class="bm" href="https://www.duden.de/"><img src="https://www.duden.de/sites/default/res/duden.svg" width=50%></a> |
+		<a class="bm" href="https://www.redensarten-index.de/suche.php"><img src="https://www.redensarten-index.de/logo.png" width=50%></a>
+	</li>
+	<hr>
+	<img src="https://d1wigddrwdtsce.cloudfront.net/img5/dl_Linguee_Logo.svg" width=50%>
 	<br>
 	<li>
 		<a class="bm" href="https://www.linguee.com/english-german">en–de</a> |
@@ -200,40 +216,35 @@ a:hover{
 		<a class="bm" href="https://www.linguee.com/french-german">fr–de</a>
 	</li>
 	<br>
-	en-en
-	<li>
-		<a class="bm" href="https://www.merriam-webster.com/">Merriam-Webster</a></li>
-		<a class="bm" href="https://dictionary.cambridge.org/">Cambridge</a>
-		<a class="bm" href="https://www.collinsdictionary.com/us/dictionary/english">Collins</a>
+		<img src= "https://upload.wikimedia.org/wikipedia/commons/b/be/Logo_wordreference.jpg" width=50%>
+	<br>
+	<li><a class="bm" href="https://www.wordreference.com/ende/">en–de</a> |
+		<a class="bm" href="https://www.wordreference.com/enfren%E2%80%93fr">en–fr</a> |
+		<a class="bm" href="https://www.wordreference.com/frde/">fr–de</a>
 	</li>
 	<br>
-	<br>
-	fr–fr
-	<br>
+		<img src="https://upload.wikimedia.org/wikipedia/en/9/98/Leo.org_%28logo%29.png">
 	<li>
-		<a class="bm" href="https://www.larousse.fr/">Larousse</a> |
-		<a class="bm" href="https://dvlf.uchicago.edu/">DVLF</a>
+		<a class="bm" href="https://dict.leo.org/german-english/">en–de</a> |
+		<a class="bm" href="https://dict.leo.org/french-english/">en–fr</a> |
+		<a class="bm" href="https://dict.leo.org/franz%C3%B6sisch-deutsch/">fr–de</a>
 	</li>
-	<br>
-	de–de
-	<li>
-		<a class="bm" href="https://www.dwds.de/">DWDS</a> |
-		<a class="bm" href="https://www.duden.de/">Duden</a> |
-		<a class="bm" href="https://www.redensarten-index.de/suche.php">Redensarten-Index</a>
-	</li>
+
+
 </div>
 
 <div class="category">
 	<center>
-	<img src="https://wikimediafoundation.org/wp-content/uploads/2018/08/Wikipedia_wordmark.png?w=1024" width=60%>
-	<br>
+	<i>
 	<li>
-		<a class="bm" href="https://en.wikipedia.org/">en</a> |
-		<a class="bm" href="https://fr.wikipedia.org/">fr</a> |
-		<a class="bm" href="https://de.wikipedia.org/">de</a>
+		<a class="bm" href="https://www.britannica.com/"><img src="https://cdn.britannica.com/mendel/eb-logo/MendelNewThistleLogo.png" width=70%></a></a>
+		<br><br>
+		<a class="bm" href="https://www.universalis.fr/"><img src="https://www.universalis.fr/_web/assets/img/banniere-fr.png" width=70%></a>
+		<br><br>
+		<a class="bm" href="https://plato.stanford.edu/"><img src="https://plato.stanford.edu/symbols/sep-man-red.png" width=25px></a>
 	</li>
-	<br>
-		<img src="https://archlinux.org/static/logos/archlinux-logo-dark-90dpi.ebdee92a15b3.png" width=60%>
+	<hr>
+		<img src="https://archlinux.org/static/logos/archlinux-logo-dark-90dpi.ebdee92a15b3.png" width=70%>
 	<li>
 		<a class="bm" href="https://wiki.archlinux.org/">ArchWiki</a> |
 		<a class="bm" href="https://wiki.archlinux.org/title/user:namoria">User</a> |
@@ -241,7 +252,7 @@ a:hover{
 		<a class="bm" href="https://aur.archlinux.org/">AUR</a>
 	</li>
 	<br>
-		<img src="https://images.pling.com/img/00/00/20/46/39/1102420/142418-1.png" width=20%>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1280px-Tux.svg.png" width=20%>
 	<br>
 		<li>
 		<a class="bm" href="https://wiki.gentoo.org/">Gentoo wiki</a> |
@@ -264,34 +275,33 @@ a:hover{
 		<a class="bm" href="https://media.ccc.de/">Chaos Computer Club Media</a>
 		</li>
 		<li>
-		<li></li><a class="bm" href="https://www.youtube.com/c/LearnLinuxtv">Learn Linux TV</a></li> |
-		<li><a class="bm" href="https://www.youtube.com/c/linode">Linode</a></li> |
-		<li><a class="bm" href="https://www.youtube.com/@TheLinuxEXP">The Linux Experiment</a></li> |
-		
-
+		<li><a class="bm" href="https://www.youtube.com/c/LearnLinuxtv">Learn Linux TV</a></li>
+		<li><a class="bm" href="https://www.youtube.com/c/linode">Linode</a></li>
+		<li><a class="bm" href="https://www.youtube.com/@TheLinuxEXP">The Linux Experiment</a></li>
 		</li>
+		</i>
 	<br>
 </div>
 
 			<div class="category">
 				<center>
-				Blogs
-				<li><a class="bm" href="https://rictornorton.co.uk/index.htm">Rictor Norton</a></li>
-				<li><a class="bm" href="http://learn-french-free-with-stories.weebly.com/">French Stories</a></li>
-				<li><a class="bm" href="https://www.1jour1actu.com/">1jour1actu</a></li>
-				<li><a class="bm" href="https://www.podcastfrancaisfacile.com/apprendre-le-francais/liste-des-textes-fle">Français facile</a></li>
-				<li><a class="bm" href="https://xkcd.com/">xkcd</a></li>
-				<br>
-				Music
-				<li><a class="bm" href="https://bandcamp.com/">Bandcamp</a>
-				</li><li><a class="bm" href="https://www.discogs.com/">Discogs</a>
-				</li><li><a class="bm" href="https://genius.com/">Genius</a>
-			</li></div>
+				<li><a class="bm" href="https://rictornorton.co.uk/index.htm"><img src="https://rictornorton.co.uk/banner.gif" width=50%></a></li>
+				<hr>
+				<li><a class="bm" href="https://www.1jour1actu.com/"><img src="https://www.1jour1actu.com/wp-content/themes/1jour1actu/assets/img/logo1j1a.png" width=50%></a></li>
+				<li><a class="bm" href="http://learn-french-free-with-stories.weebly.com/"><img src="http://learn-french-free-with-stories.weebly.com/uploads/1/7/4/1/17419259/729751779.png?67" height=50px></a></li>
+				<li><a class="bm" href="https://www.podcastfrancaisfacile.com/apprendre-le-francais/liste-des-textes-fle"><img src="https://www.podcastfrancaisfacile.com/wp-content/uploads/2020/09/logo_podcast_1x.png" width=50%></a></li>
+				<hr>
+				<li><a class="bm" href="https://xkcd.com/"><img src="https://xkcd.com/s/0b7742.png" width=50%></a></li>
+				<hr>
+				<li><a class="bm" href="https://bandcamp.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Bandcamp-logotype-color.svg/250px-Bandcamp-logotype-color.svg.png" width=50%></a</li>
+				<li><a class="bm" href="https://www.discogs.com/"><img src="https://st.discogs.com/56a0492d2cb3a5846a980714cbfb97c3fe18ecc4/images/discogs-white.png?5" width=50%></a></li>
+				<li><a class="bm" href="https://genius.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Genius-Wordmark.svg/250px-Genius-Wordmark.svg.png" width=50%></a></li>
+				</div>
 
 			<div class="category">
 				<center>
                 Security
-				<li><a class="bm" href="https://www.virustotal.com">VirusTotal</a></li>
+				<li><a class="bm" href="https://www.virustotal.com"><img src="https://www.virustotal.com/gui/images/logo.svg" width=50%></a></li>
 				<br>
 				Privacy – Testing
 				<li><a class="bm" href="https://librewolf.net/docs/testing/">LibreWolf Testing</a></li>
